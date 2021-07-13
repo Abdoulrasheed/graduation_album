@@ -46,6 +46,7 @@ const faces = [
     fullname: "Abdulrasheed Ibrahim",
     description: "Software Developer",
     picture: require("./assets/faces/abdul.jpg"),
+    picture2: require("./assets/faces/abdoul.jpg"),
     contact: {
       twitter: "https://twitter.com/aiibrahim3",
       linkedin: "https://www.linkedin.com/in/abdulrasheed-ibrahim-2b3a90103/",
@@ -89,20 +90,19 @@ const App = () => {
     setActiveFace(Math.round(e.nativeEvent.contentOffset.x / 400));
   };
 
-  function sleep(ms) {
+  const sleep = async (ms) => {
     return new Promise((resolve) => setTimeout(resolve, ms));
-  }
+  };
 
   const start = async () => {
     setcurrentItem(faces[0]);
     for (let i = 0; i <= faces.length; i++) {
-      await sleep(5000);
+      await sleep(4000);
       faces[i] && setcurrentItem(faces[i]);
 
       // stop slide show when end reached
       if (i === faces.length) {
         setIsPlaying(false);
-        setisMuted(false);
         sound.stopAsync();
       }
     }
@@ -286,6 +286,14 @@ const App = () => {
           source={require("./assets/faces/abdul.jpg")}
         />
       </TouchableOpacity>
+      <View>
+        <Text style={styles.footer}>
+          Modibbo Adama University of Technology, Yola {"\n "}
+          <Text> Department of Information Technology</Text>
+          {"\n "}
+          <Text> Class of 2020</Text>
+        </Text>
+      </View>
     </View>
   );
 };
@@ -308,7 +316,7 @@ const styles = StyleSheet.create({
   buttonsContainer: {
     justifyContent: "space-around",
     flexDirection: "row",
-    marginBottom: 80,
+    marginBottom: 40,
   },
   counter: {
     fontSize: 25,
@@ -343,6 +351,19 @@ const styles = StyleSheet.create({
     width: 40,
     height: 40,
     borderRadius: 25,
+  },
+  footer: {
+    textAlign: "center",
+    fontSize: 10,
+    color: "white",
+    marginBottom: 10,
+  },
+  maulogo: {
+    width: 40,
+    height: 35,
+    borderRadius: 25,
+    alignSelf: "center",
+    marginBottom: 5,
   },
   creatorButton: {
     position: "absolute",

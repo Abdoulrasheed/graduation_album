@@ -4,7 +4,6 @@ import {
   ImageBackground,
   StyleSheet,
   Dimensions,
-  View,
 } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 
@@ -18,7 +17,10 @@ const Card = ({ item: face, animation }) => {
         bottom: 30,
       }}
     >
-      <ImageBackground source={face.picture} style={styles.image}>
+      <ImageBackground
+        source={face.picture2 || face.picture}
+        style={styles.image}
+      >
         <LinearGradient
           colors={["#1fa8ed", "transparent", "#88d5f7"]}
           style={styles.background}
