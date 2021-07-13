@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  Animated,
   Linking,
   Platform,
   Dimensions,
@@ -19,9 +20,11 @@ const HEIGHT = Dimensions.get("window").height;
 import colors from "../config/colors";
 import Text from "./Text";
 
-const Face = ({ face }) => {
+const Face = ({ face, fadeAnim }) => {
+  const marginLeft = face.id ? { marginLeft: 25 } : { marginLeft: 3 };
+
   return (
-    <View style={styles.card}>
+    <Animated.View style={(styles.card, { opacity: fadeAnim, ...marginLeft })}>
       <Svg
         width={WIDTH}
         height={HEIGHT / 2}
@@ -133,7 +136,7 @@ const Face = ({ face }) => {
           color="#821BC4"
         />
       )}
-    </View>
+    </Animated.View>
   );
 };
 
