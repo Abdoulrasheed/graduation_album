@@ -14,7 +14,7 @@ const Card = ({ item: face, animation }) => {
     <Animated.View
       style={{
         ...animation,
-        bottom: 30,
+        top: 90,
       }}
     >
       <ImageBackground

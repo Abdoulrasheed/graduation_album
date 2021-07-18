@@ -25,58 +25,10 @@ import colors from "./config/colors";
 import fonts from "./config/fonts";
 import Text from "./components/Text";
 import Card from "./components/Card";
+import faces from "./faces";
 
 const HEIGHT = Dimensions.get("window").height;
-
-const faces = [
-  {
-    id: 1,
-    fullname: "Dr. Bamanga Ribadu",
-    description: "Head of Department",
-    isStaff: true,
-    picture: require("./assets/faces/hod.jpg"),
-    contact: {
-      twitter: "https://twitter.com/aiibrahim3",
-      linkedin: "https://www.linkedin.com/in/abdulrasheed-ibrahim-2b3a90103/",
-      email: "abdulrasheedibrahim47@gmail.com",
-      phone: "07033389645",
-    },
-  },
-  {
-    fullname: "Abdulrasheed Ibrahim",
-    description: "Software Developer",
-    picture: require("./assets/faces/abdul.jpg"),
-    picture2: require("./assets/faces/abdoul.jpg"),
-    contact: {
-      twitter: "https://twitter.com/aiibrahim3",
-      linkedin: "https://www.linkedin.com/in/abdulrasheed-ibrahim-2b3a90103/",
-      email: "abdulrasheedibrahim47@gmail.com",
-      phone: "07033389645",
-    },
-  },
-  {
-    fullname: "Nafiu Yau",
-    description: "UI / UX",
-    picture: require("./assets/faces/naf.jpg"),
-    contact: {
-      twitter: "https://twitter.com/aiibrahim3",
-      linkedin: "https://www.linkedin.com/in/abdulrasheed-ibrahim-2b3a90103/",
-      email: "naf@gmail.com",
-      phone: "08167295351",
-    },
-  },
-  {
-    fullname: "Andy Arumse",
-    description: "Software Developer",
-    picture: require("./assets/faces/andy.jpg"),
-    contact: {
-      twitter: "https://twitter.com/aiibrahim3",
-      linkedin: "https://www.linkedin.com/in/abdulrasheed-ibrahim-2b3a90103/",
-      email: "andyarumse1@gmail.com",
-      phone: "07063169364",
-    },
-  },
-];
+const WIDTH = Dimensions.get("window").width;
 
 const App = () => {
   const [isReady, setIsReady] = useState(false);
@@ -85,13 +37,18 @@ const App = () => {
   const [sound, setSound] = useState();
   const [currentItem, setcurrentItem] = useState(0);
   const [isMuted, setisMuted] = useState(false);
+  const [timer, setTimer] = useState(null);
 
   const onScroll = (e) => {
     setActiveFace(Math.round(e.nativeEvent.contentOffset.x / 400));
   };
 
   const sleep = async (ms) => {
-    return new Promise((resolve) => setTimeout(resolve, ms));
+    clearTimeout(timer);
+    return new Promise((resolve) => {
+      const timeout = setTimeout(resolve, ms);
+      setTimer(timeout);
+    });
   };
 
   const start = async () => {
@@ -102,6 +59,7 @@ const App = () => {
 
       // stop slide show when end reached
       if (i === faces.length) {
+        clearTimeout(timer);
         setIsPlaying(false);
         sound.stopAsync();
       }
@@ -167,7 +125,15 @@ const App = () => {
     const { sound } = await Audio.Sound.createAsync(
       require("./assets/audio/hero.mp3")
     );
+    sound.setOnPlaybackStatusUpdate(onPlaybackStatusUpdate);
     setSound(sound);
+  };
+
+  const onPlaybackStatusUpdate = async (playbackStatus) => {
+    if (playbackStatus.didJustFinish) {
+      await sound.setPositionAsync(0);
+      await sound.playAsync();
+    }
   };
 
   if (!isReady)
@@ -199,7 +165,10 @@ const App = () => {
         pagingEnabled
         horizontal
         showsHorizontalScrollIndicator={false}
-        contentContainerStyle={styles.cardContainer}
+        contentContainerStyle={[
+          styles.cardContainer,
+          !isPlaying && { left: WIDTH / 15 },
+        ]}
         data={faces}
         keyExtractor={(face) => face.fullname}
         renderItem={({ item }) =>
@@ -259,7 +228,7 @@ const App = () => {
               sound.setVolumeAsync(isMuted ? 0 : 1);
             }}
           >
-            {isMuted ? (
+            {!isMuted ? (
               <Ionicons name="volume-high-sharp" size={34} color="white" />
             ) : (
               <Ionicons
@@ -276,8 +245,8 @@ const App = () => {
         style={styles.creatorButton}
         onPress={() => {
           Alert.alert(
-            "App Creator",
-            "Name: Abdulrasheed Ibrahim\nwebsite: abdull.dev\nPhone: 07033389645\nEmail: abdoul@tuta.io"
+            "App Creator & Contributor",
+            "App Creator:\nName: Abdulrasheed Ibrahim\nwebsite: abdull.dev\nPhone: 07033389645\nEmail: abdoul@tuta.io\n\nContributor:\nName: Muhammad Rais"
           );
         }}
       >
@@ -341,8 +310,7 @@ const styles = StyleSheet.create({
     backgroundColor: colors.white,
   },
   cardContainer: {
-    top: 190,
-    position: "absolute",
+    top: 65,
   },
   siri: {
     top: HEIGHT / 3.6,

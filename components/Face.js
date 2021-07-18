@@ -8,6 +8,7 @@ import {
   StyleSheet,
   Image,
   TouchableOpacity,
+  Alert,
 } from "react-native";
 import Svg, { Path } from "react-native-svg";
 import { FontAwesome } from "@expo/vector-icons";
@@ -21,10 +22,8 @@ import colors from "../config/colors";
 import Text from "./Text";
 
 const Face = ({ face, fadeAnim }) => {
-  const marginLeft = face.id ? { marginLeft: 25 } : { marginLeft: 3 };
-
   return (
-    <Animated.View style={(styles.card, { opacity: fadeAnim, ...marginLeft })}>
+    <Animated.View style={{ opacity: fadeAnim, ...styles.card }}>
       <Svg
         width={WIDTH}
         height={HEIGHT / 2}
@@ -98,7 +97,9 @@ const Face = ({ face, fadeAnim }) => {
       <TouchableOpacity
         style={styles.twitterIcon}
         onPress={() => {
-          Linking.openURL(face.contact.twitter);
+          Linking.openURL(
+            face.contact?.twitter || Alert.alert("No twitter profile")
+          );
         }}
       >
         <FontAwesome name="twitter" size={24} color="#00acee" />
@@ -106,7 +107,9 @@ const Face = ({ face, fadeAnim }) => {
       <TouchableOpacity
         style={styles.linkedinIcon}
         onPress={() => {
-          Linking.openURL(face.contact.linkedin);
+          face.contact?.linkedin &&
+            Linking.openURL(face.contact.linkedin) &&
+            Alert.alert("No linkedin profile");
         }}
       >
         <FontAwesome name="linkedin" size={24} color="#0e76a8" />
@@ -115,7 +118,7 @@ const Face = ({ face, fadeAnim }) => {
         style={styles.mailIcon}
         onPress={() => {
           Linking.openURL(
-            `mailto:${face.email}?subject=Facemate [Naits]&body=Hey ${face.fullname}, I'm messaging from facemate which means we were level mates`
+            `mailto:${face.contact.email}?subject=Facemate [Naits]&body=Hey ${face.fullname}, I'm messaging from facemate which means we were level mates`
           );
         }}
       >
