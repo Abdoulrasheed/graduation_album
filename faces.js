@@ -105,7 +105,7 @@ export default [
   {
     fullname: "Muhammad Goni Ali",
     description:
-      "Two time vice Ameer And one time Ameer to the MSSN Body of the University\nMSSN Ameer to the Level through out!\nPresident to the (INAC) Interfaith Network Against Corruption Club of the university",
+      "- 2x vice Ameer And one time Ameer to the MSSN Body of the University\n-MSSN Ameer to the Level through out!\n-President to the (INAC) Interfaith Network Against Corruption Club of the university",
     picture: require("./assets/faces/amir.jpg"),
     contact: {
       twitter: "https://web.facebook.com/profile.php?id=100002105214267",
@@ -461,6 +461,17 @@ export default [
     },
   },
   {
+    fullname: "Gaikara Jamimah James",
+    description: "Business Tycoon",
+    picture: require("./assets/faces/54.jpg"),
+    contact: {
+      twitter: "https://twitter.com/MeemahJames",
+      linkedin: "",
+      email: "jmeemah@gmail.com",
+      phone: "08098394218,08069606167",
+    },
+  },
+  {
     fullname: "Lamba B. Umar",
     description:
       "Simple and complicated. it is not How far you go in life but How well.",
@@ -760,17 +771,6 @@ export default [
       linkedin: "",
       email: "muhammadauwalaminu096@gmail.com",
       phone: "08064598694",
-    },
-  },
-  {
-    fullname: "Gaikara Jamimah James",
-    description: "Business Tycoon",
-    picture: require("./assets/faces/54.jpg"),
-    contact: {
-      twitter: "https://twitter.com/MeemahJames",
-      linkedin: "",
-      email: "jmeemah@gmail.com",
-      phone: "08098394218,08069606167",
     },
   },
   {

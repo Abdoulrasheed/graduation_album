@@ -29,18 +29,22 @@ import faces from "./faces";
 
 const HEIGHT = Dimensions.get("window").height;
 const WIDTH = Dimensions.get("window").width;
+const so = new Audio.Sound();
 
 const App = () => {
-  const [isReady, setIsReady] = useState(false);
-  const [face, setActiveFace] = useState(0);
-  const [isPlaying, setIsPlaying] = useState(false);
-  const [sound, setSound] = useState();
-  const [currentItem, setcurrentItem] = useState(0);
-  const [isMuted, setisMuted] = useState(false);
   const [timer, setTimer] = useState(null);
+  const [face, setActiveFace] = useState(0);
+  const [isReady, setIsReady] = useState(false);
+  const [isMuted, setisMuted] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [currentPlayingItem, setcurrentPlayingItem] = useState(0);
 
   const onScroll = (e) => {
-    setActiveFace(Math.round(e.nativeEvent.contentOffset.x / 400));
+    setActiveFace(
+      Math.round(
+        e.nativeEvent.contentOffset.x / e.nativeEvent.layoutMeasurement.width
+      )
+    );
   };
 
   const sleep = async (ms) => {
@@ -52,16 +56,16 @@ const App = () => {
   };
 
   const start = async () => {
-    setcurrentItem(faces[0]);
+    setcurrentPlayingItem(faces[0]);
     for (let i = 0; i <= faces.length; i++) {
       await sleep(4000);
-      faces[i] && setcurrentItem(faces[i]);
+      setcurrentPlayingItem(faces[i]);
 
       // stop slide show when end reached
       if (i === faces.length) {
         clearTimeout(timer);
         setIsPlaying(false);
-        sound.stopAsync();
+        so.stopAsync();
       }
     }
   };
@@ -76,11 +80,11 @@ const App = () => {
     if (!isPlaying) {
       start();
       fadeIn();
-      sound.playAsync();
+      so.playAsync();
     } else {
-      sound.stopAsync();
+      so.stopAsync();
       setisMuted(false);
-      setcurrentItem(0);
+      setcurrentPlayingItem(0);
     }
   };
 
@@ -114,25 +118,21 @@ const App = () => {
 
   useEffect(() => {
     loadAudio();
-    return sound
+    return so
       ? () => {
-          sound.unloadAsync();
+          so.unloadAsync();
         }
       : undefined;
   }, []);
 
   const loadAudio = async () => {
-    const { sound } = await Audio.Sound.createAsync(
-      require("./assets/audio/hero.mp3")
-    );
-    sound.setOnPlaybackStatusUpdate(onPlaybackStatusUpdate);
-    setSound(sound);
+    await so.loadAsync(require("./assets/audio/hero.mp3"));
+    so.setOnPlaybackStatusUpdate(onPlaybackStatusUpdate);
   };
 
   const onPlaybackStatusUpdate = async (playbackStatus) => {
     if (playbackStatus.didJustFinish) {
-      await sound.setPositionAsync(0);
-      await sound.playAsync();
+      so.replayAsync();
     }
   };
 
@@ -149,7 +149,7 @@ const App = () => {
     <View style={styles.container}>
       <StatusBar hidden />
       <ImageBackground
-        source={isPlaying ? currentItem.picture : faces[face].picture}
+        source={isPlaying ? currentPlayingItem.picture : faces[face].picture}
         style={styles.backdrop}
       >
         <LinearGradient
@@ -173,7 +173,7 @@ const App = () => {
         keyExtractor={(face) => face.fullname}
         renderItem={({ item }) =>
           isPlaying ? (
-            <Card item={currentItem} animation={scale} />
+            <Card item={currentPlayingItem} animation={scale} />
           ) : (
             <Face face={item} />
           )
@@ -194,10 +194,10 @@ const App = () => {
               ...scale,
             }}
           >
-            {currentItem.fullname}
+            {currentPlayingItem.fullname}
             {"\n"}
             <Text style={styles.animatedTextDesc}>
-              {currentItem.description || "Student"}
+              {currentPlayingItem.description || "Student"}
             </Text>
           </Animated.Text>
         </>
@@ -217,7 +217,7 @@ const App = () => {
         </TouchableOpacity>
         <Text style={styles.counter}>
           {isPlaying
-            ? faces.indexOf(currentItem) + 1 + " / " + faces.length
+            ? faces.indexOf(currentPlayingItem) + 1 + " / " + faces.length
             : face + 1 + " / " + faces.length}
         </Text>
         {isPlaying && (
@@ -225,10 +225,10 @@ const App = () => {
             style={styles.muteSound}
             onPress={() => {
               setisMuted(!isMuted);
-              sound.setVolumeAsync(isMuted ? 0 : 1);
+              isMuted ? so.setVolumeAsync(0) : so.setVolumeAsync(1);
             }}
           >
-            {!isMuted ? (
+            {isMuted ? (
               <Ionicons name="volume-high-sharp" size={34} color="white" />
             ) : (
               <Ionicons
