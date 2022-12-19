@@ -1339,4 +1339,17 @@ export default [
     hobbies: "Tea, football, games",
     goodwillMessage: "Best of luck at your race tomorrow!... \nGood luck today!... \nGood luck and good wishes. \nAll the luck in the world All wish for you.",
   },
+  {
+    fullname: "Maryam Bakari",
+    picture: require("./assets/faces/97.jpg"),
+    contact: {
+      twitter: "",
+      linkedin: "",
+      email: "maryamabubakar1908@gmail.com",
+      phone: "07019947735 08145414279",
+    },
+    address: "Bauchi street Jimeta Yola",
+    hobbies: "Tea, football, games",
+    goodwillMessage: "Best of luck at your race tomorrow!... \nGood luck today!... \nGood luck and good wishes. \nAll the luck in the world All wish for you.",
+  },
 ];
