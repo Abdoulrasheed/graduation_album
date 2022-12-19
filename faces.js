@@ -93,6 +93,7 @@ export default [
   {
     fullname: "Shamsuddeen Sabiu A.K.A BiGtym MaMa...😎",
     description: "",
+    description: "",
     picture: require("./assets/faces/1.jpg"),
     contact: {
       twitter: "",
@@ -106,6 +107,7 @@ export default [
   },
   {
     fullname: "MUBARAK IBRAHIM GAMBO",
+    description: "",
     picture: require("./assets/faces/2.jpeg"),
     contact: {
       twitter: "",
@@ -119,6 +121,7 @@ export default [
   },
   {
     fullname: "Marngayu Blessing Bello",
+    description: "",
     picture: require("./assets/faces/3.jpg"),
     contact: {
       twitter: "",
@@ -132,6 +135,7 @@ export default [
   },
   {
     fullname: "Umar Abubakar",
+    description: "",
     picture: require("./assets/faces/4.jpeg"),
     contact: {
       twitter: "",
@@ -145,6 +149,7 @@ export default [
   },
   {
     fullname: "BigBasha",
+    description: "",
     picture: require("./assets/faces/5.png"),
     contact: {
       twitter: "",
@@ -158,6 +163,7 @@ export default [
   },
   {
     fullname: "Isaac Yakubu Dadu ",
+    description: "",
     picture: require("./assets/faces/6.jpg"),
     contact: {
       twitter: "",
@@ -171,6 +177,7 @@ export default [
   },
   {
     fullname: "George Joseph fayo",
+    description: "",
     picture: require("./assets/faces/7.jpeg"),
     contact: {
       twitter: "",
@@ -184,6 +191,7 @@ export default [
   },
   {
     fullname: "MUHAMMAD GIDADO MUHAMMAD ",
+    description: "",
     picture: require("./assets/faces/8.jpg"),
     contact: {
       twitter: "",
@@ -197,6 +205,7 @@ export default [
   },
   {
     fullname: "HARUNA HAMMADU",
+    description: "",
     picture: require("./assets/faces/9.jpg"),
     contact: {
       twitter: "",
@@ -210,6 +219,7 @@ export default [
   },
   {
     fullname: "Christopher Williams",
+    description: "",
     picture: require("./assets/faces/10.jpg"),
     contact: {
       twitter: "",
@@ -223,6 +233,7 @@ export default [
   },
   {
     fullname: "Musa Saleh 'ATTACHEE'",
+    description: "",
     picture: require("./assets/faces/11.jpg"),
     contact: {
       twitter: "",
@@ -236,6 +247,7 @@ export default [
   },
   {
     fullname: "Umar faruk umar",
+    description: "",
     picture: require("./assets/faces/92.jpg"),
     contact: {
       twitter: "",
@@ -249,6 +261,7 @@ export default [
   },
   {
     fullname: "Ahmed Manu Gidado",
+    description: "",
     picture: require("./assets/faces/12.jpg"),
     contact: {
       twitter: "",
@@ -262,6 +275,7 @@ export default [
   },
   {
     fullname: " Abdulmumini Kawuji ' AbdullSunnah'",
+    description: "",
     picture: require("./assets/faces/13.jpg"),
     contact: {
       twitter: "",
@@ -275,6 +289,7 @@ export default [
   },
   {
     fullname: "Ahudurhyel Francis",
+    description: "",
     picture: require("./assets/faces/14.jpg"),
     contact: {
       twitter: "",
@@ -288,6 +303,7 @@ export default [
   },
   {
     fullname: "Jamila Jibril ",
+    description: "",
     picture: require("./assets/faces/15.jpeg"),
     contact: {
       twitter: "",
@@ -301,6 +317,7 @@ export default [
   },
   {
     fullname: "Agbaji Adadu Samuel ",
+    description: "",
     picture: require("./assets/faces/16.jpg"),
     contact: {
       twitter: "",
@@ -314,6 +331,7 @@ export default [
   },
   {
     fullname: "Mordecai Suleiman Bobbo",
+    description: "",
     picture: require("./assets/faces/17.jpeg"),
     contact: {
       twitter: "",
@@ -327,6 +345,7 @@ export default [
   },
   {
     fullname: "UMAR YUNUSA",
+    description: "",
     picture: require("./assets/faces/18.jpg"),
     contact: {
       twitter: "",
@@ -340,6 +359,7 @@ export default [
   },
   {
     fullname: "Shamsudeen Suleiman",
+    description: "",
     picture: require("./assets/faces/19.jpg"),
     contact: {
       twitter: "",
@@ -353,6 +373,7 @@ export default [
   },
   {
     fullname: "Mustapha Badisha",
+    description: "",
     picture: require("./assets/faces/20.jpg"),
     contact: {
       twitter: "",
@@ -366,6 +387,7 @@ export default [
   },
   {
     fullname: "Abduljalil Jaafar ",
+    description: "",
     picture: require("./assets/faces/21.jpeg"),
     contact: {
       twitter: "",
@@ -379,6 +401,7 @@ export default [
   },
   {
     fullname: "Patience A Reuben",
+    description: "",
     picture: require("./assets/faces/22.jpg"),
     contact: {
       twitter: "",
@@ -392,6 +415,7 @@ export default [
   },
   {
     fullname: "Bilyaminu Jibrilla",
+    description: "",
     picture: require("./assets/faces/23.jpeg"),
     contact: {
       twitter: "",
@@ -405,6 +429,7 @@ export default [
   },
   {
     fullname: "Zubairu Umar",
+    description: "",
     picture: require("./assets/faces/24.jpg"),
     contact: {
       twitter: "",
@@ -418,6 +443,7 @@ export default [
   },
   {
     fullname: "Bobby Sambo Bobga",
+    description: "",
     picture: require("./assets/faces/25.jpg"),
     contact: {
       twitter: "",
@@ -431,6 +457,7 @@ export default [
   },
   {
     fullname: "Wakumahyel Joseph",
+    description: "",
     picture: require("./assets/faces/26.jpg"),
     contact: {
       twitter: "",
@@ -444,6 +471,7 @@ export default [
   },
   {
     fullname: "Zainab Bakari Ahmed",
+    description: "",
     picture: require("./assets/faces/27.jpg"),
     contact: {
       twitter: "",
@@ -457,6 +485,7 @@ export default [
   },
   {
     fullname: "EMMANUEL UCHE",
+    description: "",
     picture: require("./assets/faces/28.jpg"),
     contact: {
       twitter: "",
@@ -470,6 +499,7 @@ export default [
   },
   {
     fullname: "Unity Habila",
+    description: "",
     picture: require("./assets/faces/29.jpg"),
     contact: {
       twitter: "",
@@ -483,6 +513,7 @@ export default [
   },
   {
     fullname: "Adasu yakubu Alkali",
+    description: "",
     picture: require("./assets/faces/30.jpg"),
     contact: {
       twitter: "",
@@ -496,6 +527,7 @@ export default [
   },
   {
     fullname: "Mohammed Bamanga Gidado",
+    description: "",
     picture: require("./assets/faces/31.jpg"),
     contact: {
       twitter: "",
@@ -509,6 +541,7 @@ export default [
   },
   {
     fullname: "Hassana Abubakar Hassan ",
+    description: "",
     picture: require("./assets/faces/32.jpeg"),
     contact: {
       twitter: "",
@@ -522,6 +555,7 @@ export default [
   },
   {
     fullname: "Ibrahim Jalo ",
+    description: "",
     picture: require("./assets/faces/33.jpeg"),
     contact: {
       twitter: "",
@@ -535,6 +569,7 @@ export default [
   },
   {
     fullname: "Mabendi Zira Yusuf",
+    description: "",
     picture: require("./assets/faces/34.jpg"),
     contact: {
       twitter: "",
@@ -548,6 +583,7 @@ export default [
   },
   {
     fullname: "Abdulmumini Abba Maje",
+    description: "",
     picture: require("./assets/faces/35.png"),
     contact: {
       twitter: "",
@@ -561,6 +597,7 @@ export default [
   },
   {
     fullname: "Shamsiya Abubakar",
+    description: "",
     picture: require("./assets/faces/36.jpg"),
     contact: {
       twitter: "",
@@ -574,6 +611,7 @@ export default [
   },
   {
     fullname: "Sheriff, Tadegopwa",
+    description: "",
     picture: require("./assets/faces/37.png"),
     contact: {
       twitter: "",
@@ -587,6 +625,7 @@ export default [
   },
   {
     fullname: "Halima Muhammad Nasir ",
+    description: "",
     picture: require("./assets/faces/38.jpg"),
     contact: {
       twitter: "",
@@ -600,6 +639,7 @@ export default [
   },
   {
     fullname: "RUFA'EE AMINU ",
+    description: "",
     picture: require("./assets/faces/39.jpg"),
     contact: {
       twitter: "",
@@ -613,6 +653,7 @@ export default [
   },
   {
     fullname: "Samuel Ishaya ",
+    description: "",
     picture: require("./assets/faces/95.jpg"),
     contact: {
       twitter: "",
@@ -626,6 +667,7 @@ export default [
   },
   {
     fullname: "Bassi Garba ",
+    description: "",
     picture: require("./assets/faces/40.jpg"),
     contact: {
       twitter: "",
@@ -639,6 +681,7 @@ export default [
   },
   {
     fullname: "Jamila Mohammed",
+    description: "",
     picture: require("./assets/faces/41.jpg"),
     contact: {
       twitter: "",
@@ -652,6 +695,7 @@ export default [
   },
   {
     fullname: "ATIKU ABUBAKAR",
+    description: "",
     picture: require("./assets/faces/42.jpg"),
     contact: {
       twitter: "",
@@ -665,6 +709,7 @@ export default [
   },
   {
     fullname: "Nusaiba Muhammad girei ",
+    description: "",
     picture: require("./assets/faces/43.jpg"),
     contact: {
       twitter: "",
@@ -678,6 +723,7 @@ export default [
   },
   {
     fullname: "Usman Bayero Kumo",
+    description: "",
     picture: require("./assets/faces/44.png"),
     contact: {
       twitter: "",
@@ -691,6 +737,7 @@ export default [
   },
   {
     fullname: "Sudakumtemi Johnson",
+    description: "",
     picture: require("./assets/faces/45.jpg"),
     contact: {
       twitter: "",
@@ -704,6 +751,7 @@ export default [
   },
   {
     fullname: "Simon john",
+    description: "",
     picture: require("./assets/faces/81.jpg"),
     contact: {
       twitter: "",
@@ -717,6 +765,7 @@ export default [
   },
   {
     fullname: "Andrew Abel Gabriel",
+    description: "",
     picture: require("./assets/faces/46.jpg"),
     contact: {
       twitter: "",
@@ -730,6 +779,7 @@ export default [
   },
   {
     fullname: "ALIYU MAINA",
+    description: "",
     picture: require("./assets/faces/47.jpg"),
     contact: {
       twitter: "",
@@ -743,6 +793,7 @@ export default [
   },
   {
     fullname: "Abdulaziz abubakar michika ",
+    description: "",
     picture: require("./assets/faces/48.jpg"),
     contact: {
       twitter: "",
@@ -756,6 +807,7 @@ export default [
   },
   {
     fullname: "Joshua Abraham Amos ",
+    description: "",
     picture: require("./assets/faces/49.jpg"),
     contact: {
       twitter: "",
@@ -769,6 +821,7 @@ export default [
   },
   {
     fullname: "David James Birdling",
+    description: "",
     picture: require("./assets/faces/50.jpg"),
     contact: {
       twitter: "",
@@ -782,6 +835,7 @@ export default [
   },
   {
     fullname: "Yusuf Njidda ",
+    description: "",
     picture: require("./assets/faces/51.jpg"),
     contact: {
       twitter: "",
@@ -795,6 +849,7 @@ export default [
   },
   {
     fullname: "Haruna Bulus",
+    description: "",
     picture: require("./assets/faces/52.jpg"),
     contact: {
       twitter: "",
@@ -808,6 +863,7 @@ export default [
   },
   {
     fullname: "Onyinye precious okonkwo ",
+    description: "",
     picture: require("./assets/faces/53.jpg"),
     contact: {
       twitter: "",
@@ -821,6 +877,7 @@ export default [
   },
   {
     fullname: "Racheal Tabakiya",
+    description: "",
     picture: require("./assets/faces/54.jpg"),
     contact: {
       twitter: "",
@@ -834,6 +891,7 @@ export default [
   },
   {
     fullname: "Solomon yakubu Dakkus",
+    description: "",
     picture: require("./assets/faces/55.jpg"),
     contact: {
       twitter: "",
@@ -847,6 +905,7 @@ export default [
   },
   {
     fullname: "Hussaina Muhammad sani",
+    description: "",
     picture: require("./assets/faces/56.jpg"),
     contact: {
       twitter: "",
@@ -860,6 +919,7 @@ export default [
   },
   {
     fullname: "Hauwa Musa",
+    description: "",
     picture: require("./assets/faces/57.jpg"),
     contact: {
       twitter: "",
@@ -873,6 +933,7 @@ export default [
   },
   {
     fullname: "Ishaya bulus",
+    description: "",
     picture: require("./assets/faces/58.jpg"),
     contact: {
       twitter: "",
@@ -886,6 +947,7 @@ export default [
   },
   {
     fullname: "Ahmed Mubarak",
+    description: "",
     picture: require("./assets/faces/59.jpg"),
     contact: {
       twitter: "",
@@ -899,6 +961,7 @@ export default [
   },
   {
     fullname: "Gabriel Blessing",
+    description: "",
     picture: require("./assets/faces/60.jpg"),
     contact: {
       twitter: "",
@@ -912,6 +975,7 @@ export default [
   },
   {
     fullname: "MUNYAL DRAMBI ",
+    description: "",
     picture: require("./assets/faces/61.jpg"),
     contact: {
       twitter: "",
@@ -925,6 +989,7 @@ export default [
   },
   {
     fullname: "Peter joshua",
+    description: "",
     picture: require("./assets/faces/62.png"),
     contact: {
       twitter: "",
@@ -938,6 +1003,7 @@ export default [
   },
   {
     fullname: "Annah Nashon Gubi",
+    description: "",
     picture: require("./assets/faces/82.jpg"),
     contact: {
       twitter: "",
@@ -951,6 +1017,7 @@ export default [
   },
   {
     fullname: "Christiana Ezekiel ",
+    description: "",
     picture: require("./assets/faces/83.jpg"),
     contact: {
       twitter: "",
@@ -964,6 +1031,7 @@ export default [
   },
   {
     fullname: "Yahya Alim",
+    description: "",
     picture: require("./assets/faces/93.jpg"),
     contact: {
       twitter: "",
@@ -977,6 +1045,7 @@ export default [
   },
   {
     fullname: "Nanah Ibrahim",
+    description: "",
     picture: require("./assets/faces/63.jpg"),
     contact: {
       twitter: "",
@@ -990,6 +1059,7 @@ export default [
   },
   {
     fullname: "Salihu Abdullahi Digil",
+    description: "",
     picture: require("./assets/faces/64.jpg"),
     contact: {
       twitter: "",
@@ -1003,6 +1073,7 @@ export default [
   },
   {
     fullname: "Seun Fabusola",
+    description: "",
     picture: require("./assets/faces/84.jpeg"),
     contact: {
       twitter: "",
@@ -1016,6 +1087,7 @@ export default [
   },
   {
     fullname: "Solomon Sabo",
+    description: "",
     picture: require("./assets/faces/65.jpg"),
     contact: {
       twitter: "",
@@ -1029,6 +1101,7 @@ export default [
   },
   {
     fullname: "Moallahyidi Ahmed",
+    description: "",
     picture: require("./assets/faces/85.jpg"),
     contact: {
       twitter: "",
@@ -1042,6 +1115,7 @@ export default [
   },
   {
     fullname: "Safiya Abdulhamid Arabo",
+    description: "",
     picture: require("./assets/faces/66.jpg"),
     contact: {
       twitter: "",
@@ -1055,6 +1129,7 @@ export default [
   },
   {
     fullname: "Ruth Bitrus",
+    description: "",
     picture: require("./assets/faces/67.jpg"),
     contact: {
       twitter: "",
@@ -1068,6 +1143,7 @@ export default [
   },
   {
     fullname: "Usman Ab",
+    description: "",
     picture: require("./assets/faces/68.jpeg"),
     contact: {
       twitter: "",
@@ -1081,6 +1157,7 @@ export default [
   },
   {
     fullname: "Zubairu Umar ",
+    description: "",
     picture: require("./assets/faces/69.png"),
     contact: {
       twitter: "",
@@ -1094,6 +1171,7 @@ export default [
   },
   {
     fullname: "Joy Solomon Durkwa",
+    description: "",
     picture: require("./assets/faces/96.jpg"),
     contact: {
       twitter: "",
@@ -1107,6 +1185,7 @@ export default [
   },
   {
     fullname: "Hapsat mahmud Tuta",
+    description: "",
     picture: require("./assets/faces/70.jpeg"),
     contact: {
       twitter: "",
@@ -1120,6 +1199,7 @@ export default [
   },
   {
     fullname: "ABUBAKAR ABBA UMAR",
+    description: "",
     picture: require("./assets/faces/71.jpeg"),
     contact: {
       twitter: "",
@@ -1133,6 +1213,7 @@ export default [
   },
   {
     fullname: "KAREEM MOJEED ADEBOLA",
+    description: "",
     picture: require("./assets/faces/72.jpeg"),
     contact: {
       twitter: "",
@@ -1146,6 +1227,7 @@ export default [
   },
   {
     fullname: "Danjuma Adamu Mshelia",
+    description: "",
     picture: require("./assets/faces/73.jpg"),
     contact: {
       twitter: "",
@@ -1159,6 +1241,7 @@ export default [
   },
   {
     fullname: "Auwal Musa Hassan",
+    description: "",
     picture: require("./assets/faces/74.jpg"),
     contact: {
       twitter: "",
@@ -1172,6 +1255,7 @@ export default [
   },
   {
     fullname: "NIGODAN ARKE MUSA ",
+    description: "",
     picture: require("./assets/faces/91.jpg"),
     contact: {
       twitter: "",
@@ -1185,6 +1269,7 @@ export default [
   },
   {
     fullname: "Valentine Friday Garba",
+    description: "",
     picture: require("./assets/faces/94.jpg"),
     contact: {
       twitter: "",
@@ -1198,6 +1283,7 @@ export default [
   },
   {
     fullname: "Fatima Abubakar",
+    description: "",
     picture: require("./assets/faces/75.jpg"),
     contact: {
       twitter: "",
@@ -1211,6 +1297,7 @@ export default [
   },
   {
     fullname: "Arabi M. Abdullahi",
+    description: "",
     picture: require("./assets/faces/86.jpg"),
     contact: {
       twitter: "",
@@ -1224,6 +1311,7 @@ export default [
   },
   {
     fullname: "Abubakar Salihu ",
+    description: "",
     picture: require("./assets/faces/87.jpg"),
     contact: {
       twitter: "",
@@ -1237,6 +1325,7 @@ export default [
   },
   {
     fullname: "IMRAN USMAN",
+    description: "",
     picture: require("./assets/faces/76.jpg"),
     contact: {
       twitter: "",
@@ -1250,6 +1339,7 @@ export default [
   },
   {
     fullname: "Bonidefaiye Friday Dayo",
+    description: "",
     picture: require("./assets/faces/77.jpg"),
     contact: {
       twitter: "",
@@ -1263,6 +1353,7 @@ export default [
   },
   {
     fullname: "Amedu Martins Urah",
+    description: "",
     picture: require("./assets/faces/78.jpg"),
     contact: {
       twitter: "",
@@ -1276,6 +1367,7 @@ export default [
   },
   {
     fullname: "Ngati Nelson",
+    description: "",
     picture: require("./assets/faces/88.jpg"),
     contact: {
       twitter: "",
@@ -1289,6 +1381,7 @@ export default [
   },
   {
     fullname: "Mustapha Abubakar",
+    description: "",
     picture: require("./assets/faces/79.jpg"),
     contact: {
       twitter: "",
@@ -1302,6 +1395,7 @@ export default [
   },
   {
     fullname: "Anas Bakari Ahmed",
+    description: "",
     picture: require("./assets/faces/80.jpg"),
     contact: {
       twitter: "",
@@ -1315,6 +1409,7 @@ export default [
   },
   {
     fullname: "hamidu hassan",
+    description: "",
     picture: require("./assets/faces/89.jpg"),
     contact: {
       twitter: "",
@@ -1328,6 +1423,7 @@ export default [
   },
   {
     fullname: "musa maina dauda",
+    description: "",
     picture: require("./assets/faces/90.jpg"),
     contact: {
       twitter: "",
@@ -1341,6 +1437,7 @@ export default [
   },
   {
     fullname: "Maryam Bakari",
+    description: "",
     picture: require("./assets/faces/97.jpg"),
     contact: {
       twitter: "",
