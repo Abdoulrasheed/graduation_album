@@ -13,12 +13,10 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.abdoulrasheed.naitsclassof2021",
+      "bundleIdentifier": "com.mautech.naits",
       "buildNumber": "1.0.1"
     },
     "android": {
