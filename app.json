@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "NAITS CLASS OF 2020",
-    "slug": "naits-class-of-2020",
-    "version": "1.0.0",
+    "name": "Naits 2021",
+    "slug": "naits-class-of-2021",
+    "version": "2.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -13,11 +13,13 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.abdoulrasheed.naitsclassof2020",
-      "buildNumber": "1.0.0"
+      "bundleIdentifier": "com.abdoulrasheed.naitsclassof2021",
+      "buildNumber": "1.0.1"
     },
     "android": {
       "adaptiveIcon": {
@@ -25,10 +27,15 @@
         "backgroundColor": "#FFFFFF"
       },
       "package": "com.abdoulrasheed.naitsclassof2020",
-      "versionCode": 1
+      "versionCode": 2
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "c59cf556-a8c7-426d-bdf5-9c1d5c70b513"
+      }
     }
   }
 }

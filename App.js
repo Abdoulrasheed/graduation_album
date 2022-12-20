@@ -5,30 +5,31 @@ import LottieView from "lottie-react-native";
 import { FontAwesome5 } from "@expo/vector-icons";
 import { Ionicons } from "@expo/vector-icons";
 import { Audio } from "expo-av";
+import { activateKeepAwake, deactivateKeepAwake } from "expo-keep-awake";
 
 import {
-  Animated,
   View,
   Image,
-  ImageBackground,
-  FlatList,
-  StyleSheet,
-  Dimensions,
-  TouchableOpacity,
-  Easing,
   Alert,
+  Easing,
+  FlatList,
+  Animated,
+  Dimensions,
+  StyleSheet,
+  ImageBackground,
+  TouchableOpacity,
 } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 
-import Face from "./components/Face";
-import colors from "./config/colors";
+import faces from "./faces";
 import fonts from "./config/fonts";
+import colors from "./config/colors";
+import Face from "./components/Face";
 import Text from "./components/Text";
 import Card from "./components/Card";
-import faces from "./faces";
 
-const HEIGHT = Dimensions.get("window").height;
-const WIDTH = Dimensions.get("window").width;
+const HEIGHT = Dimensions.get("screen").height;
+const WIDTH = Dimensions.get("screen").width;
 const so = new Audio.Sound();
 
 const App = () => {
@@ -38,6 +39,7 @@ const App = () => {
   const [isMuted, setisMuted] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentPlayingItem, setcurrentPlayingItem] = useState(0);
+  const [keepAwakeActivated, setKeepAwakeActivated] = useState(false);
 
   const onScroll = (e) => {
     setActiveFace(
@@ -56,6 +58,11 @@ const App = () => {
   };
 
   const start = async () => {
+    if (!keepAwakeActivated) {
+      setKeepAwakeActivated(true);
+      activateKeepAwake();
+    }
+
     setcurrentPlayingItem(faces[0]);
     for (let i = 0; i <= faces.length; i++) {
       await sleep(4000);
@@ -82,6 +89,8 @@ const App = () => {
       fadeIn();
       so.playAsync();
     } else {
+      setKeepAwakeActivated(false);
+      deactivateKeepAwake();
       so.stopAsync();
       setisMuted(false);
       setcurrentPlayingItem(0);
@@ -167,7 +176,7 @@ const App = () => {
         showsHorizontalScrollIndicator={false}
         contentContainerStyle={[
           styles.cardContainer,
-          !isPlaying && { left: WIDTH / 15 },
+          !isPlaying && { left: WIDTH / 10 },
         ]}
         data={faces}
         keyExtractor={(face) => face.fullname}
@@ -244,19 +253,21 @@ const App = () => {
       <TouchableOpacity
         style={styles.creatorButton}
         onPress={() => {
+          // DO NOT REMOVE ATTRIBUTION, Update compiled by and contributor(s)
           Alert.alert(
-            "App Creator & Contributor",
-            "App Creator:\nName: Abdulrasheed Ibrahim\nwebsite: abdull.dev\nPhone: 07033389645\nEmail: abdoul@tuta.io\n\nContributor:\nName: Muhammad Rais"
+            "App Creator & Contributors",
+            "\n\nCompiled By: Abdulrasheed Ibrahim\n\nOriginally Created By:Abdulrasheed Ibrahim\n\nwebsite: abdull.dev\n\nPhone: 07033389645\nEmail: hello@abdull.dev\n\nContributor:\nName: Dahiru Aliyu Adamu"
           );
         }}
       >
         <Image
           style={styles.creator}
-          source={require("./assets/faces/abdul.jpg")}
+          source={require("./assets/faces/abdul.webp")}
         />
       </TouchableOpacity>
       <View>
         <Text style={styles.footer}>
+          {" "}
           Modibbo Adama University of Technology, Yola {"\n "}
           <Text> Department of Information Technology</Text>
           {"\n "}
@@ -294,9 +305,9 @@ const styles = StyleSheet.create({
     color: colors.white,
   },
   backdrop: {
-    position: "absolute",
+    height: 500,
     width: "100%",
-    height: 300,
+    position: "absolute",
   },
   background: {
     position: "absolute",
@@ -324,7 +335,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     fontSize: 10,
     color: "white",
-    marginBottom: 10,
+    marginBottom: 25,
   },
   maulogo: {
     width: 40,

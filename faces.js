@@ -1,3 +1,79 @@
+const getRandomQuate = () => {
+  const quotes = [
+    //success quotes
+    {
+      quote:
+        "If you set your goals ridiculously high and it's a failure, you will fail above everyone else's success.",
+      source: "James Cameron",
+      tag: "success",
+    },
+    {
+      quote: "The Way Get Started Is To Quit Talking And Begin Doing",
+      source: "Walt Disney",
+      tag: "success",
+    },
+    {
+      quote: "Don’t Let Yesterday Take Up Too Much Of Today.",
+      source: "Will Rogers",
+      tag: "success",
+    },
+    {
+      quote: "We Generate Fears While We Sit. We Overcome Them By Action",
+      source: "Dr. Henry Link",
+      tag: "success",
+    },
+
+    //health quotes
+    {
+      quote:
+        "Early to bed and early to rise, makes a man healthy wealthy and wise.",
+      source: "Benjamin Franklin",
+      tag: "health",
+    },
+    {
+      quote: "Let food be thy medicine and medicine be thy food.",
+      source: "Hippocrates",
+      tag: "health",
+    },
+    {
+      quote: "If you can’t pronounce it, don’t eat it.",
+      source: "Common Sense",
+      tag: "health",
+    },
+    {
+      quote:
+        "Health is like money, we never have a true idea of its value until we lose it.",
+      source: "Josh Billings",
+      tag: "health",
+    },
+
+    //spirituality quotes
+    {
+      quote: "Life is really simple, but men insist on making it complicated.",
+      source: "Confucius",
+      tag: "spirituality",
+    },
+    {
+      quote: "My religion is very simple. My religion is kindness.",
+      source: "Dalai Lama",
+      tag: "spirituality",
+    },
+    {
+      quote: "Knowing others is wisdom; knowing the self is enlightenment.",
+      source: "Tao Te Ching",
+      tag: "spirituality",
+    },
+    {
+      quote:
+        "When there is love in your heart, everything outside of you also becomes lovable.",
+      source: "Veeresh",
+      tag: "spirituality",
+    },
+  ];
+
+  return quotes.splice(Math.floor(Math.random() * quotes.length), 1)[0].quote;
+};
+
 export default [
   {
     id: 1,
@@ -92,8 +168,7 @@ export default [
   },
   {
     fullname: "Shamsuddeen Sabiu A.K.A BiGtym MaMa...😎",
-    description: "",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/1.jpg"),
     contact: {
       twitter: "",
@@ -103,11 +178,12 @@ export default [
     },
     address: "Wakili Buba B. Near Transformer Mayo Belwa Adamawa State",
     hobbies: "Travelling, Reading, and Watching Movies.",
-    goodwillMessage: "Our dearest teachers thank you for being very kind and patient and also for being a role model to us. Respect for you will remain in our heart forever. \nThank you for everything. \nHappy Graduation NAITS❤ Class of 2021."
+    goodwillMessage:
+      "Our dearest teachers thank you for being very kind and patient and also for being a role model to us. Respect for you will remain in our heart forever. \nThank you for everything. \nHappy Graduation NAITS❤ Class of 2021.",
   },
   {
     fullname: "MUBARAK IBRAHIM GAMBO",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/2.jpeg"),
     contact: {
       twitter: "",
@@ -121,7 +197,7 @@ export default [
   },
   {
     fullname: "Marngayu Blessing Bello",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/3.jpg"),
     contact: {
       twitter: "",
@@ -131,11 +207,12 @@ export default [
     },
     address: "Specialist hospital quarters, Yola",
     hobbies: "Reading, exploring new ideas.",
-    goodwillMessage: "Diligence and consistency is the secret to success, may the Lord bless us in all our endeavors, I love you all my IMT family.",
+    goodwillMessage:
+      "Diligence and consistency is the secret to success, may the Lord bless us in all our endeavors, I love you all my IMT family.",
   },
   {
     fullname: "Umar Abubakar",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/4.jpeg"),
     contact: {
       twitter: "",
@@ -149,7 +226,7 @@ export default [
   },
   {
     fullname: "BigBasha",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/5.png"),
     contact: {
       twitter: "",
@@ -159,11 +236,12 @@ export default [
     },
     address: "",
     hobbies: "Footballer.",
-    goodwillMessage: "What a pity! I'm not at your place! \nMiles separate me from you, Success guys all d way, miss u so much.",
+    goodwillMessage:
+      "What a pity! I'm not at your place! \nMiles separate me from you, Success guys all d way, miss u so much.",
   },
   {
     fullname: "Isaac Yakubu Dadu ",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/6.jpg"),
     contact: {
       twitter: "",
@@ -173,11 +251,12 @@ export default [
     },
     address: "C/O Low Cost Primary school Uba, Askira/Uba LGA, Borno State ",
     hobbies: "Football, Researching and Reading.",
-    goodwillMessage: "We are Great Family of NAITS and forever great we will remain. I wish everyone success in every endeavor of life.",
+    goodwillMessage:
+      "We are Great Family of NAITS and forever great we will remain. I wish everyone success in every endeavor of life.",
   },
   {
     fullname: "George Joseph fayo",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/7.jpeg"),
     contact: {
       twitter: "",
@@ -191,7 +270,7 @@ export default [
   },
   {
     fullname: "MUHAMMAD GIDADO MUHAMMAD ",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/8.jpg"),
     contact: {
       twitter: "",
@@ -205,7 +284,7 @@ export default [
   },
   {
     fullname: "HARUNA HAMMADU",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/9.jpg"),
     contact: {
       twitter: "",
@@ -215,11 +294,12 @@ export default [
     },
     address: "PARIYA WARD FUFORE LGA. ADAMAWA STATE.",
     hobbies: "READING AND WRITING",
-    goodwillMessage: "Don't quit trying and don't rest until you have achieve all you've been ever dream of. Let us keep doing greater things in future that will make us proud. Congratulations to all of us on our graduation. \nHappy Graduation NAITS Family. Class of 2021.",
+    goodwillMessage:
+      "Don't quit trying and don't rest until you have achieve all you've been ever dream of. Let us keep doing greater things in future that will make us proud. Congratulations to all of us on our graduation. \nHappy Graduation NAITS Family. Class of 2021.",
   },
   {
     fullname: "Christopher Williams",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/10.jpg"),
     contact: {
       twitter: "",
@@ -233,7 +313,7 @@ export default [
   },
   {
     fullname: "Musa Saleh 'ATTACHEE'",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/11.jpg"),
     contact: {
       twitter: "",
@@ -247,7 +327,7 @@ export default [
   },
   {
     fullname: "Umar faruk umar",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/92.jpg"),
     contact: {
       twitter: "",
@@ -257,11 +337,12 @@ export default [
     },
     address: "No 38 ribadu road fufore LG",
     hobbies: "Reading and chatting ",
-    goodwillMessage: "We pray the success from Allah, may we go higher to the highest level. \nMay Allah forgive my dad and grant him jannatul firdaus 🙏",
+    goodwillMessage:
+      "We pray the success from Allah, may we go higher to the highest level. \nMay Allah forgive my dad and grant him jannatul firdaus 🙏",
   },
   {
     fullname: "Ahmed Manu Gidado",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/12.jpg"),
     contact: {
       twitter: "",
@@ -271,11 +352,12 @@ export default [
     },
     address: "Shelleng ",
     hobbies: "Salawat ala Sayyidil wujud",
-    goodwillMessage: "Thank you guys for your patience and dedication God bless you all🙏🙏🙏 \nMay Almighty Allah fulfill our dreams.",
+    goodwillMessage:
+      "Thank you guys for your patience and dedication God bless you all🙏🙏🙏 \nMay Almighty Allah fulfill our dreams.",
   },
   {
     fullname: " Abdulmumini Kawuji ' AbdullSunnah'",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/13.jpg"),
     contact: {
       twitter: "",
@@ -285,11 +367,12 @@ export default [
     },
     address: "Adamawa State Yola North Rumde Ward Doubeli Jummat Mosque",
     hobbies: "Watching Football and Playing Football",
-    goodwillMessage: "Alhamdullah, Masha Allah, I am really proud of our Class of 2022, We work so hard every day to achieve this accomplishment, very incredible success, Best of luck on our new beginnings!",
+    goodwillMessage:
+      "Alhamdullah, Masha Allah, I am really proud of our Class of 2022, We work so hard every day to achieve this accomplishment, very incredible success, Best of luck on our new beginnings!",
   },
   {
     fullname: "Ahudurhyel Francis",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/14.jpg"),
     contact: {
       twitter: "",
@@ -299,11 +382,12 @@ export default [
     },
     address: "Opposite EYN church Zhediyi, Hong",
     hobbies: "Singing",
-    goodwillMessage: "No matter how hard life has been on you, never give up on God because He has a plan for you.",
+    goodwillMessage:
+      "No matter how hard life has been on you, never give up on God because He has a plan for you.",
   },
   {
     fullname: "Jamila Jibril ",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/15.jpeg"),
     contact: {
       twitter: "",
@@ -313,11 +397,12 @@ export default [
     },
     address: "",
     hobbies: "Eating, dancing and Sleeping ",
-    goodwillMessage: "Let your heart be the most beautiful thing about you, be Kind 🤍",
+    goodwillMessage:
+      "Let your heart be the most beautiful thing about you, be Kind 🤍",
   },
   {
     fullname: "Agbaji Adadu Samuel ",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/16.jpg"),
     contact: {
       twitter: "",
@@ -331,7 +416,7 @@ export default [
   },
   {
     fullname: "Mordecai Suleiman Bobbo",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/17.jpeg"),
     contact: {
       twitter: "",
@@ -345,7 +430,7 @@ export default [
   },
   {
     fullname: "UMAR YUNUSA",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/18.jpg"),
     contact: {
       twitter: "",
@@ -359,7 +444,7 @@ export default [
   },
   {
     fullname: "Shamsudeen Suleiman",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/19.jpg"),
     contact: {
       twitter: "",
@@ -373,7 +458,7 @@ export default [
   },
   {
     fullname: "Mustapha Badisha",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/20.jpg"),
     contact: {
       twitter: "",
@@ -383,11 +468,12 @@ export default [
     },
     address: "",
     hobbies: "Thinks 3 out 4 of my life.",
-    goodwillMessage: "Take a break from your computer my fellow developers. Go out, take a walk and clear your head. We all have our crucibles. ",
+    goodwillMessage:
+      "Take a break from your computer my fellow developers. Go out, take a walk and clear your head. We all have our crucibles. ",
   },
   {
     fullname: "Abduljalil Jaafar ",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/21.jpeg"),
     contact: {
       twitter: "",
@@ -397,11 +483,12 @@ export default [
     },
     address: "No 22 Sarkin Dawaki ward jalingo",
     hobbies: "Reading, Football,",
-    goodwillMessage: "We are Moving on to a new and exciting chapter in our life. I wish You all the best for the Future that lies ahead. \nCongratulations to y’all Naits Family on your graduation ",
+    goodwillMessage:
+      "We are Moving on to a new and exciting chapter in our life. I wish You all the best for the Future that lies ahead. \nCongratulations to y’all Naits Family on your graduation ",
   },
   {
     fullname: "Patience A Reuben",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/22.jpg"),
     contact: {
       twitter: "",
@@ -415,7 +502,7 @@ export default [
   },
   {
     fullname: "Bilyaminu Jibrilla",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/23.jpeg"),
     contact: {
       twitter: "",
@@ -425,11 +512,12 @@ export default [
     },
     address: "Belel ward Maiha LGA, Adamawa State",
     hobbies: "Support",
-    goodwillMessage: "May God bless our lives and fulfill everyone's wishes for good",
+    goodwillMessage:
+      "May God bless our lives and fulfill everyone's wishes for good",
   },
   {
     fullname: "Zubairu Umar",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/24.jpg"),
     contact: {
       twitter: "",
@@ -439,11 +527,12 @@ export default [
     },
     address: "Wuro Hausa Girei II Ward Girei LGA \nAdamawa State Nigeria ",
     hobbies: "Research and traveling ",
-    goodwillMessage: "Wishing all the Graduating Students of Modibbo Adama University Yola,Success in their future endeavors wherever they are.",
+    goodwillMessage:
+      "Wishing all the Graduating Students of Modibbo Adama University Yola,Success in their future endeavors wherever they are.",
   },
   {
     fullname: "Bobby Sambo Bobga",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/25.jpg"),
     contact: {
       twitter: "",
@@ -453,11 +542,12 @@ export default [
     },
     address: "No6 sarkin kudu street jimeta yola ",
     hobbies: "Reading and watching football ",
-    goodwillMessage: "To All My Course mates, \nWith immense pride, I congratulate my dear students on a job well done. Having gotten to know you over the last few years has enriched my life. I know you will go out into the world with confidence in your abilities to communicate and analyze the world you encounter. Remember, you can always reach out to me for counsel. With faith that you will affect great change in the world, I wish you the best of luck. \nStay in Touch, \nBOBBY SAMBO BOBGA ",
+    goodwillMessage:
+      "To All My Course mates, \nWith immense pride, I congratulate my dear students on a job well done. Having gotten to know you over the last few years has enriched my life. I know you will go out into the world with confidence in your abilities to communicate and analyze the world you encounter. Remember, you can always reach out to me for counsel. With faith that you will affect great change in the world, I wish you the best of luck. \nStay in Touch, \nBOBBY SAMBO BOBGA ",
   },
   {
     fullname: "Wakumahyel Joseph",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/26.jpg"),
     contact: {
       twitter: "",
@@ -467,11 +557,12 @@ export default [
     },
     address: "Biu, Borno state",
     hobbies: "Chatting and listening to music",
-    goodwillMessage: "Always have it in mind that life is short, so do the right thing and stay in peace with everyone.🙏🤗",
+    goodwillMessage:
+      "Always have it in mind that life is short, so do the right thing and stay in peace with everyone.🙏🤗",
   },
   {
     fullname: "Zainab Bakari Ahmed",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/27.jpg"),
     contact: {
       twitter: "",
@@ -485,7 +576,7 @@ export default [
   },
   {
     fullname: "EMMANUEL UCHE",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/28.jpg"),
     contact: {
       twitter: "",
@@ -493,13 +584,15 @@ export default [
       email: "",
       phone: "",
     },
-    address: "KOFARE OFF MBACHURE ROAD BEHIND AGRIC MECHANIZATION HEAD QUARTERS. YOLA NORTH",
+    address:
+      "KOFARE OFF MBACHURE ROAD BEHIND AGRIC MECHANIZATION HEAD QUARTERS. YOLA NORTH",
     hobbies: "FOOTBALL AND READING",
-    goodwillMessage: "My graduation celebrations will not be complete until I thank you all for being such a supportive classmates  to me…. Thanks a lot for being there",
+    goodwillMessage:
+      "My graduation celebrations will not be complete until I thank you all for being such a supportive classmates  to me…. Thanks a lot for being there",
   },
   {
     fullname: "Unity Habila",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/29.jpg"),
     contact: {
       twitter: "",
@@ -509,11 +602,12 @@ export default [
     },
     address: "Former Hossana academy Sangere futy",
     hobbies: "Football, Networking & reading",
-    goodwillMessage: "With friends we succeed, with enemies we become more successful. ( no one can make you interior without your conscious).",
+    goodwillMessage:
+      "With friends we succeed, with enemies we become more successful. ( no one can make you interior without your conscious).",
   },
   {
     fullname: "Adasu yakubu Alkali",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/30.jpg"),
     contact: {
       twitter: "",
@@ -523,11 +617,12 @@ export default [
     },
     address: "",
     hobbies: "Reading, watching movie and listening to music ",
-    goodwillMessage: "When I think of any of my successes, I am thankful to God from whom all blessings flow and to my family and friends who enrich my life big thanks to everyone I love you all cheers!",
+    goodwillMessage:
+      "When I think of any of my successes, I am thankful to God from whom all blessings flow and to my family and friends who enrich my life big thanks to everyone I love you all cheers!",
   },
   {
     fullname: "Mohammed Bamanga Gidado",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/31.jpg"),
     contact: {
       twitter: "",
@@ -541,7 +636,7 @@ export default [
   },
   {
     fullname: "Hassana Abubakar Hassan ",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/32.jpeg"),
     contact: {
       twitter: "",
@@ -555,7 +650,7 @@ export default [
   },
   {
     fullname: "Ibrahim Jalo ",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/33.jpeg"),
     contact: {
       twitter: "",
@@ -569,7 +664,7 @@ export default [
   },
   {
     fullname: "Mabendi Zira Yusuf",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/34.jpg"),
     contact: {
       twitter: "",
@@ -577,13 +672,15 @@ export default [
       email: "",
       phone: "",
     },
-    address: "Mabendi Tech Computer Center Anguwan Fulani Hayin Gada Vunoklang, Girei Lga",
+    address:
+      "Mabendi Tech Computer Center Anguwan Fulani Hayin Gada Vunoklang, Girei Lga",
     hobbies: "Teaching and Research",
-    goodwillMessage: "Let this love follow us as we are leaving this environment. Naits One Love, One family. Together we stand!",
+    goodwillMessage:
+      "Let this love follow us as we are leaving this environment. Naits One Love, One family. Together we stand!",
   },
   {
     fullname: "Abdulmumini Abba Maje",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/35.png"),
     contact: {
       twitter: "",
@@ -592,12 +689,14 @@ export default [
       phone: "",
     },
     address: "No2 Maje street Rogo Ward Takum Taraba State Nigeria",
-    hobbies: "Politics, Meeting New people, I love Patriots Citizens of Nigeria",
-    goodwillMessage: "God bless aus all (Allah ya Sadamu da Alkhairi, Inna Mana Fatan Alkhairi) Ameen!!",
+    hobbies:
+      "Politics, Meeting New people, I love Patriots Citizens of Nigeria",
+    goodwillMessage:
+      "God bless aus all (Allah ya Sadamu da Alkhairi, Inna Mana Fatan Alkhairi) Ameen!!",
   },
   {
     fullname: "Shamsiya Abubakar",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/36.jpg"),
     contact: {
       twitter: "",
@@ -607,11 +706,12 @@ export default [
     },
     address: "Jereng Mayo/Belwa Adamawa state",
     hobbies: "Cooking, Traveling",
-    goodwillMessage: "Congratulations to all us may we leave long to enjoy the fruits of our labour, hustle oooo and keep it legit, remember you don't have a name until you make one for yourself, I wish us all the best. \n#MissChubby",
+    goodwillMessage:
+      "Congratulations to all us may we leave long to enjoy the fruits of our labour, hustle oooo and keep it legit, remember you don't have a name until you make one for yourself, I wish us all the best. \n#MissChubby",
   },
   {
     fullname: "Sheriff, Tadegopwa",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/37.png"),
     contact: {
       twitter: "",
@@ -621,11 +721,12 @@ export default [
     },
     address: "Adjacent to FARO Company, Kofare Industrial Layout.Jimeta/Yola",
     hobbies: "Listening to music and Football",
-    goodwillMessage: "I thank God for making me fulfill this chapter of my life together with this beautiful family (NAITS), I'm really proud of this class of 2021, and I can't wait to see all your accomplishments in the nearest future. God bless you all.",
+    goodwillMessage:
+      "I thank God for making me fulfill this chapter of my life together with this beautiful family (NAITS), I'm really proud of this class of 2021, and I can't wait to see all your accomplishments in the nearest future. God bless you all.",
   },
   {
     fullname: "Halima Muhammad Nasir ",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/38.jpg"),
     contact: {
       twitter: "",
@@ -635,11 +736,12 @@ export default [
     },
     address: "",
     hobbies: "Fashion designer and cooking ",
-    goodwillMessage: "I wish for all of us a successful feature ahead, may Almighty Allah guide and protect us from the evil eye and may Aljannatul Firdausi be last destination Ameeeennn ....",
+    goodwillMessage:
+      "I wish for all of us a successful feature ahead, may Almighty Allah guide and protect us from the evil eye and may Aljannatul Firdausi be last destination Ameeeennn ....",
   },
   {
     fullname: "RUFA'EE AMINU ",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/39.jpg"),
     contact: {
       twitter: "",
@@ -649,11 +751,12 @@ export default [
     },
     address: "Nguroje Sardauna LGA Taraba State, Phone Number",
     hobbies: "Reading, Playing Music, Traveling ",
-    goodwillMessage: "It is not in the stars to hold our destiny but in ourselves, If you can imagine it, you can achieve it, if you can dream it, you can become it. Happy Graduation.🎓 \nNAITS family..❤ Class of 2021",
+    goodwillMessage:
+      "It is not in the stars to hold our destiny but in ourselves, If you can imagine it, you can achieve it, if you can dream it, you can become it. Happy Graduation.🎓 \nNAITS family..❤ Class of 2021",
   },
   {
     fullname: "Samuel Ishaya ",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/95.jpg"),
     contact: {
       twitter: "",
@@ -663,11 +766,12 @@ export default [
     },
     address: "Wauru jabbe, Yola",
     hobbies: "Chess, Music, reading  and football",
-    goodwillMessage: "I pray for my classmates and myself success after graduation ",
+    goodwillMessage:
+      "I pray for my classmates and myself success after graduation ",
   },
   {
     fullname: "Bassi Garba ",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/40.jpg"),
     contact: {
       twitter: "",
@@ -677,11 +781,12 @@ export default [
     },
     address: "Federal housing estate phase3 ",
     hobbies: "Singing",
-    goodwillMessage: "As  we graduate I pray for favor our there. Let the love that has been keeping us keep burning. I love you all NAITS. Gboss Cares.",
+    goodwillMessage:
+      "As  we graduate I pray for favor our there. Let the love that has been keeping us keep burning. I love you all NAITS. Gboss Cares.",
   },
   {
     fullname: "Jamila Mohammed",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/41.jpg"),
     contact: {
       twitter: "",
@@ -691,11 +796,12 @@ export default [
     },
     address: "No.10 Lamido Street Shagari Phase one Yola South ",
     hobbies: "Cooking, reading, and listing to music ",
-    goodwillMessage: "May Almighty Allah bless our hustle and my he see us through this life.",
+    goodwillMessage:
+      "May Almighty Allah bless our hustle and my he see us through this life.",
   },
   {
     fullname: "ATIKU ABUBAKAR",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/42.jpg"),
     contact: {
       twitter: "",
@@ -705,11 +811,12 @@ export default [
     },
     address: "Opp. No 20 Ribadu Street, Yola South",
     hobbies: "Reading and Learning New Things",
-    goodwillMessage: "Verily after every hardship there is relief, after every hardship there is relief",
+    goodwillMessage:
+      "Verily after every hardship there is relief, after every hardship there is relief",
   },
   {
     fullname: "Nusaiba Muhammad girei ",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/43.jpg"),
     contact: {
       twitter: "",
@@ -719,11 +826,12 @@ export default [
     },
     address: "No 2 baissa Street nepa road ",
     hobbies: "Reading and watching movies ",
-    goodwillMessage: "keep doing good things and you will see the good result,with Allah everything gonna be alright,I wish us success in life,",
+    goodwillMessage:
+      "keep doing good things and you will see the good result,with Allah everything gonna be alright,I wish us success in life,",
   },
   {
     fullname: "Usman Bayero Kumo",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/44.png"),
     contact: {
       twitter: "",
@@ -737,7 +845,7 @@ export default [
   },
   {
     fullname: "Sudakumtemi Johnson",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/45.jpg"),
     contact: {
       twitter: "",
@@ -745,13 +853,15 @@ export default [
       email: "",
       phone: "",
     },
-    address: "Gangdu State Dev. Area, Yelwa Timdore Distr, Ganye LGA Adamawa state",
+    address:
+      "Gangdu State Dev. Area, Yelwa Timdore Distr, Ganye LGA Adamawa state",
     hobbies: "Reading, Praying, Playing instruments and Singing",
-    goodwillMessage: " You've been very inspiring, considerate, caring, supportive, and trusting friends. I want to use this moment to thank you deeply for everything I'm grateful to you all my Lecturers and my colleagues",
+    goodwillMessage:
+      " You've been very inspiring, considerate, caring, supportive, and trusting friends. I want to use this moment to thank you deeply for everything I'm grateful to you all my Lecturers and my colleagues",
   },
   {
     fullname: "Simon john",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/81.jpg"),
     contact: {
       twitter: "",
@@ -761,11 +871,12 @@ export default [
     },
     address: "Maiduguri Borno state polo",
     hobbies: "Reading and coding ",
-    goodwillMessage: "We all are human we ought to respect and value each other's opinion no one is born perfect",
+    goodwillMessage:
+      "We all are human we ought to respect and value each other's opinion no one is born perfect",
   },
   {
     fullname: "Andrew Abel Gabriel",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/46.jpg"),
     contact: {
       twitter: "",
@@ -775,11 +886,12 @@ export default [
     },
     address: "Kofare,c/o Chuks Block Industry, Jimeta/Yola",
     hobbies: "Watching movies, Reading",
-    goodwillMessage: "Congratulations to of us the Class of 2021 on our graduation. All of our hard work and perseverance have led us to this proud moment in our lives. Best wishes on our next adventure!",
+    goodwillMessage:
+      "Congratulations to of us the Class of 2021 on our graduation. All of our hard work and perseverance have led us to this proud moment in our lives. Best wishes on our next adventure!",
   },
   {
     fullname: "ALIYU MAINA",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/47.jpg"),
     contact: {
       twitter: "",
@@ -793,7 +905,7 @@ export default [
   },
   {
     fullname: "Abdulaziz abubakar michika ",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/48.jpg"),
     contact: {
       twitter: "",
@@ -807,7 +919,7 @@ export default [
   },
   {
     fullname: "Joshua Abraham Amos ",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/49.jpg"),
     contact: {
       twitter: "",
@@ -817,11 +929,12 @@ export default [
     },
     address: "COAS BLOCK A, FLAT 7, YAR'ADUA BARRACKS, ASOKORO, ABUJA.",
     hobbies: "Watching Movies and Listening to Music ",
-    goodwillMessage: "We have a great class of 2021, and I can't wait to read about all your successes in the coming chapter. On your graduation, Class of 2021, congratulations. You have earned this proud moment in your lives with your dedication and perseverance. Wishing you luck on your upcoming Adventure!",
+    goodwillMessage:
+      "We have a great class of 2021, and I can't wait to read about all your successes in the coming chapter. On your graduation, Class of 2021, congratulations. You have earned this proud moment in your lives with your dedication and perseverance. Wishing you luck on your upcoming Adventure!",
   },
   {
     fullname: "David James Birdling",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/50.jpg"),
     contact: {
       twitter: "",
@@ -831,11 +944,12 @@ export default [
     },
     address: "Karewa Extension",
     hobbies: "playing soccer,reading novels and traveling",
-    goodwillMessage: "Farewell to the most amazing class ever. I will for ever miss this remarkable institute  dearly. May we all be victorious in all spheres of life!......Farewell my amazing people.",
+    goodwillMessage:
+      "Farewell to the most amazing class ever. I will for ever miss this remarkable institute  dearly. May we all be victorious in all spheres of life!......Farewell my amazing people.",
   },
   {
     fullname: "Yusuf Njidda ",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/51.jpg"),
     contact: {
       twitter: "",
@@ -849,7 +963,7 @@ export default [
   },
   {
     fullname: "Haruna Bulus",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/52.jpg"),
     contact: {
       twitter: "",
@@ -863,7 +977,7 @@ export default [
   },
   {
     fullname: "Onyinye precious okonkwo ",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/53.jpg"),
     contact: {
       twitter: "",
@@ -877,7 +991,7 @@ export default [
   },
   {
     fullname: "Racheal Tabakiya",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/54.jpg"),
     contact: {
       twitter: "",
@@ -887,11 +1001,12 @@ export default [
     },
     address: "Gboko, new GRA benue state.",
     hobbies: "Singing, dancing, reading, Cooking, hangout.",
-    goodwillMessage: "I wish everyone the very best that life has to offer and a happy ending, one love❤️ ",
+    goodwillMessage:
+      "I wish everyone the very best that life has to offer and a happy ending, one love❤️ ",
   },
   {
     fullname: "Solomon yakubu Dakkus",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/55.jpg"),
     contact: {
       twitter: "",
@@ -901,11 +1016,12 @@ export default [
     },
     address: "Specialist quarters jimeta/yola",
     hobbies: "Traveling & Listening to music",
-    goodwillMessage: "It's wonderful to be one of NAITs FAM class of 2021 \nwith people as nice as you guys - You Guys made Me feel so at home by everything you do. So this just comes to thank you all in a warm and special way- For your kind supports in one way or the other was enjoyed much more than words can say! \nMore Luv, Less Ego FAM (LetLoveLead)",
+    goodwillMessage:
+      "It's wonderful to be one of NAITs FAM class of 2021 \nwith people as nice as you guys - You Guys made Me feel so at home by everything you do. So this just comes to thank you all in a warm and special way- For your kind supports in one way or the other was enjoyed much more than words can say! \nMore Luv, Less Ego FAM (LetLoveLead)",
   },
   {
     fullname: "Hussaina Muhammad sani",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/56.jpg"),
     contact: {
       twitter: "",
@@ -915,11 +1031,12 @@ export default [
     },
     address: "Abuja road yola Town",
     hobbies: "Reading, music, outing",
-    goodwillMessage: "All praise is to Almighty Allah who gave me the grace and privilege to have a successful end. Congratulations to us on our graduation. I cannot wait to see All our accomplishments in the next chapter.",
+    goodwillMessage:
+      "All praise is to Almighty Allah who gave me the grace and privilege to have a successful end. Congratulations to us on our graduation. I cannot wait to see All our accomplishments in the next chapter.",
   },
   {
     fullname: "Hauwa Musa",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/57.jpg"),
     contact: {
       twitter: "",
@@ -929,11 +1046,12 @@ export default [
     },
     address: "",
     hobbies: "Travelling",
-    goodwillMessage: "Delayed but not denied! The world is there waiting for our potentials. CONGRATULATIONS GREAT NAITS!!!",
+    goodwillMessage:
+      "Delayed but not denied! The world is there waiting for our potentials. CONGRATULATIONS GREAT NAITS!!!",
   },
   {
     fullname: "Ishaya bulus",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/58.jpg"),
     contact: {
       twitter: "",
@@ -947,7 +1065,7 @@ export default [
   },
   {
     fullname: "Ahmed Mubarak",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/59.jpg"),
     contact: {
       twitter: "",
@@ -961,7 +1079,7 @@ export default [
   },
   {
     fullname: "Gabriel Blessing",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/60.jpg"),
     contact: {
       twitter: "",
@@ -971,11 +1089,12 @@ export default [
     },
     address: "No.  113 Mubi Road Jimeta ",
     hobbies: "Cooking and Singing",
-    goodwillMessage: "It is not of him that willth but it is of God who shows Mercy. I love you all!",
+    goodwillMessage:
+      "It is not of him that willth but it is of God who shows Mercy. I love you all!",
   },
   {
     fullname: "MUNYAL DRAMBI ",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/61.jpg"),
     contact: {
       twitter: "",
@@ -985,11 +1104,12 @@ export default [
     },
     address: "Michika II ward, Michika local Government Area Adamawa State",
     hobbies: "Reading and Socialism",
-    goodwillMessage: "As we come to end of our academic journey as graduates, my prayer towards everyone is well leaving and success the new environment.",
+    goodwillMessage:
+      "As we come to end of our academic journey as graduates, my prayer towards everyone is well leaving and success the new environment.",
   },
   {
     fullname: "Peter joshua",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/62.png"),
     contact: {
       twitter: "",
@@ -999,11 +1119,12 @@ export default [
     },
     address: "",
     hobbies: "Reading,  listening to music and playing Plano ",
-    goodwillMessage: "So i finally made it through the mill! I know just how it feels. ",
+    goodwillMessage:
+      "So i finally made it through the mill! I know just how it feels. ",
   },
   {
     fullname: "Annah Nashon Gubi",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/82.jpg"),
     contact: {
       twitter: "",
@@ -1013,11 +1134,12 @@ export default [
     },
     address: "",
     hobbies: "Watching movies/chatting ",
-    goodwillMessage: "Learning is the only thing the mind never exhausts,never fears and never regrets.",
+    goodwillMessage:
+      "Learning is the only thing the mind never exhausts,never fears and never regrets.",
   },
   {
     fullname: "Christiana Ezekiel ",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/83.jpg"),
     contact: {
       twitter: "",
@@ -1027,11 +1149,12 @@ export default [
     },
     address: "Numan Road wuro jabbe",
     hobbies: "Reading, singing and chilling ",
-    goodwillMessage: "I appreciate God,the maker of heaven and earth,the alpha and Omega,the beginning and earth,for giving me the grace and privilege to have a successful end throughout my studies.",
+    goodwillMessage:
+      "I appreciate God,the maker of heaven and earth,the alpha and Omega,the beginning and earth,for giving me the grace and privilege to have a successful end throughout my studies.",
   },
   {
     fullname: "Yahya Alim",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/93.jpg"),
     contact: {
       twitter: "",
@@ -1045,7 +1168,7 @@ export default [
   },
   {
     fullname: "Nanah Ibrahim",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/63.jpg"),
     contact: {
       twitter: "",
@@ -1059,7 +1182,7 @@ export default [
   },
   {
     fullname: "Salihu Abdullahi Digil",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/64.jpg"),
     contact: {
       twitter: "",
@@ -1069,11 +1192,12 @@ export default [
     },
     address: "153 Base Service Group NAF Base Yola",
     hobbies: "Swimming",
-    goodwillMessage: "I may say goodbye to you, but my heart will never say goodbye. I will always keep you in my heart. I wish us all a successful future, farewell.",
+    goodwillMessage:
+      "I may say goodbye to you, but my heart will never say goodbye. I will always keep you in my heart. I wish us all a successful future, farewell.",
   },
   {
     fullname: "Seun Fabusola",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/84.jpeg"),
     contact: {
       twitter: "",
@@ -1087,7 +1211,7 @@ export default [
   },
   {
     fullname: "Solomon Sabo",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/65.jpg"),
     contact: {
       twitter: "",
@@ -1097,11 +1221,12 @@ export default [
     },
     address: "Demsawo,  Adamawa state Nigeria ",
     hobbies: "Making arts,  watching,  chatting ",
-    goodwillMessage: "What you think,  you attract. Think good for yourself and hope for the best.  6 years with you all was memory #ROI",
+    goodwillMessage:
+      "What you think,  you attract. Think good for yourself and hope for the best.  6 years with you all was memory #ROI",
   },
   {
     fullname: "Moallahyidi Ahmed",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/85.jpg"),
     contact: {
       twitter: "",
@@ -1115,7 +1240,7 @@ export default [
   },
   {
     fullname: "Safiya Abdulhamid Arabo",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/66.jpg"),
     contact: {
       twitter: "",
@@ -1125,11 +1250,12 @@ export default [
     },
     address: "Karewa maskare Behind Hotel la birem ",
     hobbies: "Cooking,Gardening and Travelling,",
-    goodwillMessage: "All of our hard work and perseverance have led us to this proud moment in our lives. ",
+    goodwillMessage:
+      "All of our hard work and perseverance have led us to this proud moment in our lives. ",
   },
   {
     fullname: "Ruth Bitrus",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/67.jpg"),
     contact: {
       twitter: "",
@@ -1143,7 +1269,7 @@ export default [
   },
   {
     fullname: "Usman Ab",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/68.jpeg"),
     contact: {
       twitter: "",
@@ -1157,7 +1283,7 @@ export default [
   },
   {
     fullname: "Zubairu Umar ",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/69.png"),
     contact: {
       twitter: "",
@@ -1167,11 +1293,12 @@ export default [
     },
     address: "Wuro Hausa Girei II Ward Girei LGA Adamawa State ",
     hobbies: "Research and Traveling ",
-    goodwillMessage: "Wishing all the Final Year students of all Nigerian universities success in their Exams",
+    goodwillMessage:
+      "Wishing all the Final Year students of all Nigerian universities success in their Exams",
   },
   {
     fullname: "Joy Solomon Durkwa",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/96.jpg"),
     contact: {
       twitter: "",
@@ -1185,7 +1312,7 @@ export default [
   },
   {
     fullname: "Hapsat mahmud Tuta",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/70.jpeg"),
     contact: {
       twitter: "",
@@ -1195,11 +1322,12 @@ export default [
     },
     address: "No 40 Abuja road sanda",
     hobbies: "Trying new recipes and Watching movie ohhh and sleeping ",
-    goodwillMessage: "Always be true to yourself don’t pretend to be someone who you are not.",
+    goodwillMessage:
+      "Always be true to yourself don’t pretend to be someone who you are not.",
   },
   {
     fullname: "ABUBAKAR ABBA UMAR",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/71.jpeg"),
     contact: {
       twitter: "",
@@ -1213,7 +1341,7 @@ export default [
   },
   {
     fullname: "KAREEM MOJEED ADEBOLA",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/72.jpeg"),
     contact: {
       twitter: "",
@@ -1227,7 +1355,7 @@ export default [
   },
   {
     fullname: "Danjuma Adamu Mshelia",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/73.jpg"),
     contact: {
       twitter: "",
@@ -1241,7 +1369,7 @@ export default [
   },
   {
     fullname: "Auwal Musa Hassan",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/74.jpg"),
     contact: {
       twitter: "",
@@ -1251,11 +1379,12 @@ export default [
     },
     address: "",
     hobbies: "Traveling /////",
-    goodwillMessage: "No doubt, Allah is the best planner indeed. Whatever we plan or think for our life, only that will happen that Allah planned.",
+    goodwillMessage:
+      "No doubt, Allah is the best planner indeed. Whatever we plan or think for our life, only that will happen that Allah planned.",
   },
   {
     fullname: "NIGODAN ARKE MUSA ",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/91.jpg"),
     contact: {
       twitter: "",
@@ -1269,7 +1398,7 @@ export default [
   },
   {
     fullname: "Valentine Friday Garba",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/94.jpg"),
     contact: {
       twitter: "",
@@ -1279,11 +1408,12 @@ export default [
     },
     address: "No 35 hospital road jimeta Yola",
     hobbies: "Watching football and playing football and listening to music ",
-    goodwillMessage: "Success in everything we do in life,and may our labour never be in vain.",
+    goodwillMessage:
+      "Success in everything we do in life,and may our labour never be in vain.",
   },
   {
     fullname: "Fatima Abubakar",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/75.jpg"),
     contact: {
       twitter: "",
@@ -1297,7 +1427,7 @@ export default [
   },
   {
     fullname: "Arabi M. Abdullahi",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/86.jpg"),
     contact: {
       twitter: "",
@@ -1307,11 +1437,12 @@ export default [
     },
     address: "Off nepa road j/yola no. 17 Jen close",
     hobbies: "Reading and Football",
-    goodwillMessage: "Success is not a product of coincidence is a product of yesterday's planning and hard work. This is your time to plan for your next product.",
+    goodwillMessage:
+      "Success is not a product of coincidence is a product of yesterday's planning and hard work. This is your time to plan for your next product.",
   },
   {
     fullname: "Abubakar Salihu ",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/87.jpg"),
     contact: {
       twitter: "",
@@ -1325,8 +1456,8 @@ export default [
   },
   {
     fullname: "IMRAN USMAN",
-    description: "",
-    picture: require("./assets/faces/76.jpg"),
+    description: getRandomQuate(),
+    picture: require("./assets/faces/76.jpeg"),
     contact: {
       twitter: "",
       linkedin: "",
@@ -1335,11 +1466,12 @@ export default [
     },
     address: "Block 21 Flat 7 , CBN QUATERS BEHIND OANDO GARKI ABUJA",
     hobbies: "Listening to Music ",
-    goodwillMessage: "Erhhhmmm I want use this medium to appreciate each and everyone of you, I’ve learnt alot from you guys some directly some indirectly, It has been a long rough journey for us all but at last we overcome  \nMay we all achieve great things in our future endeavors 💚 \nThank you for the lessons I really appreciate and lots of LOVE from here!",
+    goodwillMessage:
+      "Erhhhmmm I want use this medium to appreciate each and everyone of you, I’ve learnt alot from you guys some directly some indirectly, It has been a long rough journey for us all but at last we overcome  \nMay we all achieve great things in our future endeavors 💚 \nThank you for the lessons I really appreciate and lots of LOVE from here!",
   },
   {
     fullname: "Bonidefaiye Friday Dayo",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/77.jpg"),
     contact: {
       twitter: "",
@@ -1349,11 +1481,12 @@ export default [
     },
     address: "No 68B Aiyeteju Street Kabba, Kogi State",
     hobbies: "Reading, Handball and Traveling",
-    goodwillMessage: "I bring goodwill message to all final year Information Technology department, you have been such an amazing fellow all this years from 100L to 500L, I am to delight and happy I met you all on our way to attaining this milestone in our life. I wish you all success and greatness in all ur future endeavours!! You shall livelong to fulfil your God's purpose for your life. \nGod bless all Final Year \nGod bless Information Technology Department \nGod bless MAU",
+    goodwillMessage:
+      "I bring goodwill message to all final year Information Technology department, you have been such an amazing fellow all this years from 100L to 500L, I am to delight and happy I met you all on our way to attaining this milestone in our life. I wish you all success and greatness in all ur future endeavours!! You shall livelong to fulfil your God's purpose for your life. \nGod bless all Final Year \nGod bless Information Technology Department \nGod bless MAU",
   },
   {
     fullname: "Amedu Martins Urah",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/78.jpg"),
     contact: {
       twitter: "",
@@ -1367,7 +1500,7 @@ export default [
   },
   {
     fullname: "Ngati Nelson",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/88.jpg"),
     contact: {
       twitter: "",
@@ -1377,11 +1510,12 @@ export default [
     },
     address: "Kofare Agric along Zone 3",
     hobbies: "Getting Money and Spending it Well",
-    goodwillMessage: "Life is not beds of Roses. \nSo Live Smart and Shine your Eyes. \nThe journey ahead is Greater and Tougher. \nBUT Through Perseverance and Hardwork \nAll good must come to a Halt. \nUp NAITS",
+    goodwillMessage:
+      "Life is not beds of Roses. \nSo Live Smart and Shine your Eyes. \nThe journey ahead is Greater and Tougher. \nBUT Through Perseverance and Hardwork \nAll good must come to a Halt. \nUp NAITS",
   },
   {
     fullname: "Mustapha Abubakar",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/79.jpg"),
     contact: {
       twitter: "",
@@ -1391,11 +1525,12 @@ export default [
     },
     address: "Tudun Wada Shamaki Ward, Near GSTC Gombe, Gombe State.",
     hobbies: "Recitation of the Holy Qur'an and watching movies.",
-    goodwillMessage: "My dear respected colleagues,  \nMartin Luther King junior once said that 'Coming together is the beginning, keeping together is the progress and working together is the success thus i must say that haven seeing ourselves to the end of this particular journey is a story worth sharing, our departure isn't a reason to forget ourselves, let's be with one another always in our heart please, I promise to represent myself, to represent you and to represent the institution that mastermind what we've become together and also protect and promote the right and previledge of all of you my dear brothers and sisters. \nMay success and glory continue to be in our portion. \nThank you all.",
+    goodwillMessage:
+      "My dear respected colleagues,  \nMartin Luther King junior once said that 'Coming together is the beginning, keeping together is the progress and working together is the success thus i must say that haven seeing ourselves to the end of this particular journey is a story worth sharing, our departure isn't a reason to forget ourselves, let's be with one another always in our heart please, I promise to represent myself, to represent you and to represent the institution that mastermind what we've become together and also protect and promote the right and previledge of all of you my dear brothers and sisters. \nMay success and glory continue to be in our portion. \nThank you all.",
   },
   {
     fullname: "Anas Bakari Ahmed",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/80.jpg"),
     contact: {
       twitter: "",
@@ -1409,7 +1544,7 @@ export default [
   },
   {
     fullname: "hamidu hassan",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/89.jpg"),
     contact: {
       twitter: "",
@@ -1423,7 +1558,7 @@ export default [
   },
   {
     fullname: "musa maina dauda",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/90.jpg"),
     contact: {
       twitter: "",
@@ -1433,11 +1568,12 @@ export default [
     },
     address: "Biu borno state behind motor park, dauda terror street",
     hobbies: "Tea, football, games",
-    goodwillMessage: "Best of luck at your race tomorrow!... \nGood luck today!... \nGood luck and good wishes. \nAll the luck in the world All wish for you.",
+    goodwillMessage:
+      "Best of luck at your race tomorrow!... \nGood luck today!... \nGood luck and good wishes. \nAll the luck in the world All wish for you.",
   },
   {
     fullname: "Maryam Bakari",
-    description: "",
+    description: getRandomQuate(),
     picture: require("./assets/faces/97.jpg"),
     contact: {
       twitter: "",
@@ -1447,6 +1583,7 @@ export default [
     },
     address: "Bauchi street Jimeta Yola",
     hobbies: "Tea, football, games",
-    goodwillMessage: "Best of luck at your race tomorrow!... \nGood luck today!... \nGood luck and good wishes. \nAll the luck in the world All wish for you.",
+    goodwillMessage:
+      "Best of luck at your race tomorrow!... \nGood luck today!... \nGood luck and good wishes. \nAll the luck in the world All wish for you.",
   },
 ];

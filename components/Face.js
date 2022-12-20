@@ -31,7 +31,7 @@ const Face = ({ face, fadeAnim }) => {
         xmlns="http://www.w3.org/2000/svg"
       >
         <Path
-          d="M0 63L310 7V180V353H0V63Z"
+          d="M0 63L330 7V180V353H0V63Z"
           fill={colors.primary}
           opacity="0.2"
         />
@@ -41,7 +41,7 @@ const Face = ({ face, fadeAnim }) => {
           opacity="0.5"
         />
         <Path
-          d="M2.5 85L300.5 179.5H312.5V352.5H2.5V85Z"
+          d="M2.5 85L320.5 179.5H312.5V352.5H2.5V85Z"
           fill={colors.primary}
           opacity="0.5"
         />
@@ -53,7 +53,7 @@ const Face = ({ face, fadeAnim }) => {
         <Path
           fillRule="evenodd"
           clipRule="evenodd"
-          d="M310 7.5L0 163L0 352.565L310 352.565L310 144.233L310 7.5Z"
+          d="M320 7.5L0 163L0 392.565L310 332.565L310 144.233L310 7.5Z"
           fill="white"
         />
       </Svg>
@@ -87,9 +87,11 @@ const Face = ({ face, fadeAnim }) => {
       <TouchableOpacity
         style={styles.phoneIcon}
         onPress={() => {
-          Platform.OS === "android"
-            ? Linking.openURL(`tel:${face.contact.phone}`)
-            : Linking.openURL(`telprompt:${face.contact.phone}`);
+          face.contact.phone
+            ? Platform.OS === "android"
+              ? Linking.openURL(`tel:${face.contact.phone}`)
+              : Linking.openURL(`telprompt:${face.contact.phone}`)
+            : Alert.alert("No contact info");
         }}
       >
         <FontAwesome name="phone" size={24} color="green" />
@@ -97,9 +99,9 @@ const Face = ({ face, fadeAnim }) => {
       <TouchableOpacity
         style={styles.twitterIcon}
         onPress={() => {
-          Linking.openURL(
-            face.contact?.twitter || Alert.alert("No twitter profile")
-          );
+          face.contact?.twitter
+            ? Linking.openURL(face.contact?.twitter)
+            : Alert.alert("No twitter profile");
         }}
       >
         <FontAwesome name="twitter" size={24} color="#00acee" />
@@ -107,9 +109,9 @@ const Face = ({ face, fadeAnim }) => {
       <TouchableOpacity
         style={styles.linkedinIcon}
         onPress={() => {
-          face.contact?.linkedin &&
-            Linking.openURL(face.contact.linkedin) &&
-            Alert.alert("No linkedin profile");
+          face.contact?.linkedin
+            ? Linking.openURL(face.contact.linkedin)
+            : Alert.alert("No linkedin profile");
         }}
       >
         <FontAwesome name="linkedin" size={24} color="#0e76a8" />
@@ -117,17 +119,19 @@ const Face = ({ face, fadeAnim }) => {
       <TouchableOpacity
         style={styles.mailIcon}
         onPress={() => {
-          Linking.openURL(
-            `mailto:${face.contact.email}?subject=Facemate [Naits]&body=Hey ${face.fullname}, I'm messaging from facemate which means we were level mates`
-          );
+          face.contact.email
+            ? Linking.openURL(
+                `mailto:${face.contact.email}?subject=Facemate [Naits]&body=Hey ${face.fullname}, I'm messaging from facemate which means we were level mates`
+              )
+            : Alert.alert("No email address");
         }}
       >
         <Ionicons name="ios-mail-open-sharp" size={24} color="#4285F4" />
       </TouchableOpacity>
       {face.isStaff ? (
-        <Entypo
+        <FontAwesome
           style={styles.certificate}
-          name="awareness-ribbon"
+          name="star-half-empty"
           size={50}
           color="green"
         />
@@ -157,6 +161,7 @@ const styles = StyleSheet.create({
     marginRight: 50,
     marginTop: 20,
     fontSize: 12,
+    maxWidth: 280,
     textAlign: "left",
   },
   detailsContainer: {
@@ -188,6 +193,8 @@ const styles = StyleSheet.create({
     fontFamily: "AkayaKanadaka-Regular",
     marginLeft: 35,
     marginTop: -20,
+    maxWidth: 200,
+    marginBottom: 10,
   },
   phoneIcon: {
     position: "absolute",
