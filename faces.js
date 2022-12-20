@@ -800,6 +800,20 @@ export default [
       "May Almighty Allah bless our hustle and my he see us through this life.",
   },
   {
+    fullname: "Kanane Jones Sukanebe",
+    description: getRandomQuate(),
+    picture: require("./assets/faces/98.jpeg"),
+    contact: {
+      twitter: "https://web.facebook.com/profile.php?id=100070083510585",
+      linkedin: "https://web.facebook.com/profile.php?id=100070083510585",
+      email: "",
+      phone: "08030541337",
+    },
+    address: "Yola, Nigeria",
+    hobbies: "Cooking, Conversing, and Travelling",
+    goodwillMessage: "",
+  },
+  {
     fullname: "ATIKU ABUBAKAR",
     description: getRandomQuate(),
     picture: require("./assets/faces/42.jpg"),

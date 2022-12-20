@@ -1,25 +1,25 @@
 import React from "react";
 import {
-  Animated,
+  View,
+  Alert,
+  Image,
   Linking,
+  Animated,
   Platform,
   Dimensions,
-  View,
   StyleSheet,
-  Image,
   TouchableOpacity,
-  Alert,
 } from "react-native";
-import Svg, { Path } from "react-native-svg";
-import { FontAwesome } from "@expo/vector-icons";
-import { Ionicons } from "@expo/vector-icons";
-import { MaterialIcons } from "@expo/vector-icons";
 import { Entypo } from "@expo/vector-icons";
+import Svg, { Path } from "react-native-svg";
+import { Ionicons } from "@expo/vector-icons";
+import { FontAwesome } from "@expo/vector-icons";
+import { MaterialIcons } from "@expo/vector-icons";
 
+import Text from "./Text";
+import colors from "../config/colors";
 const WIDTH = Dimensions.get("window").width;
 const HEIGHT = Dimensions.get("window").height;
-import colors from "../config/colors";
-import Text from "./Text";
 
 const Face = ({ face, fadeAnim }) => {
   return (
@@ -81,7 +81,7 @@ const Face = ({ face, fadeAnim }) => {
           {""} {face.contact.email}
         </Text>
         <Text style={styles.faceDescription} numberOfLines={4}>
-          {face.description}
+          {face.goodwillMessage || face.description}
         </Text>
       </View>
       <TouchableOpacity
